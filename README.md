@@ -1,6 +1,6 @@
 # kronos — Infrastructure Drift Detection. Infrastructure drift detection and remediation
 
-Infrastructure Drift Detection. Infrastructure drift detection and remediation. kronos gives you a focused, inspectable implementation of that idea.
+Infrastructure Drift Detection. Infrastructure drift detection and remediation.
 
 ## Why kronos
 
