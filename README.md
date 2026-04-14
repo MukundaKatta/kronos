@@ -1,56 +1,28 @@
-# 🔱 Kronos — Infrastructure Drift Detection
+# kronos — Infrastructure Drift Detection. Infrastructure drift detection and remediation
 
-> **Greek Mythology**: Titan of Time | Infrastructure drift detection and remediation
+Infrastructure Drift Detection. Infrastructure drift detection and remediation. kronos gives you a focused, inspectable implementation of that idea.
 
-[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://MukundaKatta.github.io/kronos/)
-[![GitHub](https://img.shields.io/github/license/MukundaKatta/kronos?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/MukundaKatta/kronos?style=flat-square)](https://github.com/MukundaKatta/kronos/stargazers)
+## Why kronos
 
-## 🚀 Overview
+kronos exists to make this workflow practical. Infrastructure drift detection. infrastructure drift detection and remediation. It favours a small, inspectable surface over sprawling configuration.
 
-Infrastructure drift detection and remediation
+## How It Works
 
-**Tech Stack:** Python, Terraform
+The code is organised as a focused, single-purpose module with a clear entry point and minimal ceremony.
 
-## 📦 Quick Start
+## Getting Started
 
-```bash
-git clone https://github.com/MukundaKatta/kronos.git
-cd kronos
-# Follow setup instructions below
-```
+Clone the repository and inspect the source to see how to run it.
 
-## 🏗️ Project Structure
+## Usage
+
+See the source files and entry points for concrete usage patterns.
+
+## Project Structure
 
 ```
 kronos/
-├── README.md
-├── LICENSE
 ├── CLAUDE.md
-├── .gitignore
-├── src/
-│   ├── main.py
-│   ├── config.py
-│   └── utils.py
-├── tests/
-│   └── test_main.py
-├── docs/
-│   └── architecture.md
-├── examples/
-│   └── basic_usage.py
-└── .github/
-    └── workflows/
-        └── static.yml
+├── LICENSE
+├── README.md
 ```
-
-## 🌐 Live Demo
-
-Visit the landing page: **https://MukundaKatta.github.io/kronos/**
-
-## 📄 License
-
-MIT License — © 2026 Officethree Technologies
-
-## 🔱 Part of the Mythological Portfolio
-
-This is project **#kronos** in the [100-project Mythological Portfolio](https://github.com/MukundaKatta) by Officethree Technologies.
