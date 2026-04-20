@@ -85,3 +85,40 @@ export function summarize(changes) {
   }
   return out;
 }
+
+/**
+ * Baseline drift policy for how findings are categorized.
+ */
+export function createDriftBaseline() {
+  return {
+    informational: ["tags", "descriptions"],
+    actionable: ["scaling", "networking", "runtime"],
+    dangerous: ["iam", "policy", "securitygroup", "security_group"],
+  };
+}
+
+/**
+ * Approval and remediation lifecycle for a drift finding.
+ */
+export function remediationWorkflow(change) {
+  const severity = classifyDrift(change).severity;
+  return {
+    state: severity === "low" ? "detected" : "awaiting-approval",
+    approvalRequired: severity !== "low",
+    autoRemediate: severity === "low",
+    exceptionAllowed: true,
+  };
+}
+
+/**
+ * Track intentional exceptions separately from remediation.
+ */
+export function createExceptionRecord(change, { owner, expiresAt, reason }) {
+  return {
+    path: change.path,
+    owner,
+    expiresAt,
+    reason,
+    state: "accepted-exception",
+  };
+}
